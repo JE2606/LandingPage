@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sitio web para dentista." />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="shortcut icon" href="imagenes/diente.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./js/scrollAnimation.js"></script>
+
+    <title>Juane Dental</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="hero hidden" id="hero">
+      <nav class="nav container">
+        <!-- Logo tipo texto -->
+        <div class="nav__logo">
+          <img src="./imagenes/diente.png" alt="logo" class="nav__title" />
+        </div>
+
+        <!-- LINKS -->
+        <ul class="nav__link nav__link--menu">
+          <li class="nav__items">
+            <a href="#hero" class="nav__links">Inicio</a>
+          </li>
+          <li class="nav__items">
+            <a href="#about" class="nav__links">Sobre nosotros</a>
+          </li>
+          <li class="nav__items">
+            <a href="#services" class="nav__links">Servicios</a>
+          </li>
+          <li class="nav__items">
+            <a href="#contact" class="nav__links">Contacto</a>
+          </li>
+
+          <img src="./imagenes/close.svg" alt="close" class="nav__close" />
+        </ul>
+
+        <div class="nav__menu">
+          <img src="./imagenes/menu.svg" alt="menu" class="nav__img" />
+        </div>
+      </nav>
+
+      <section class="hero__container container">
+        <h1 class="hero__title">
+          La clave de la felicidad es una sonrisa sana.
+        </h1>
+        <p class="hero__paragraph">
+          En nuestra clínica dental, ofrecemos cuidado dental excepcional con
+          tecnología avanzada y profesionales altamente calificados para tu
+          salud bucal.
+        </p>
+        <a href="#contact" class="cta">¡Contáctanos!</a>
+      </section>
+    </header>
+
+    <main>
+      <section class="container about hidden" id="about">
+        <div class="about__intro">
+          <h2 class="subtitle">Conoce Quiénes Somos</h2>
+          <p class="about__paragraph">
+            En Juane Dental, nos comprometemos a proporcionar atención dental
+            excepcional. Nuestra clínica refleja años de experiencia y pasión
+            por la odontología. Somos un equipo de profesionales altamente
+            calificados con una visión compartida: promover sonrisas saludables
+            y hermosas.
+          </p>
+        </div>
+        <div class="about__main">
+          <article class="about__icons">
+            <img src="./imagenes/mision.png" alt="mision" class="about__icon" />
+            <h2 class="about__title">Misión</h2>
+            <p class="about__paragrah second-paragrah">
+              Brindar atención dental excepcional y personalizada para promover
+              sonrisas saludables y hermosas. Valoramos la confianza de nuestros
+              pacientes y trabajamos incansablemente para mantenerla con un
+              servicio cálido y ético.
+            </p>
+          </article>
+          <article class="about__icons">
+            <img src="./imagenes/vision.png" alt="vision" class="about__icon" />
+            <h2 class="about__title">Visión</h2>
+            <p class="about__paragrah second-paragrah">
+              Aspiramos a ser líderes en odontología, conocidos por nuestra
+              excelencia en el cuidado dental y la satisfacción de los
+              pacientes. Queremos ser la primera opción para aquellos que buscan
+              atención de calidad, respaldada por un equipo apasionado. Nuestra
+              meta es contribuir a una sociedad con sonrisas más saludables y
+              confiadas.
+            </p>
+          </article>
+          <article class="about__icons">
+            <img
+              src="./imagenes/valores.png"
+              alt="valores"
+              class="about__icon"
+            />
+            <h2 class="about__title title-valores">Valores</h2>
+            <p class="about__paragrah second-paragrah">
+              Comprometidos con la excelencia dental, mejoramos constantemente
+              nuestras habilidades. Actuamos con integridad, priorizando la
+              confianza de los pacientes. Ofrecemos atención personalizada y
+              buscamos la excelencia en todo, desde diagnósticos hasta
+              tratamientos.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="knowledge hidden">
+        <div class="knowledge__container container">
+          <div class="knowledge__text">
+            <h2 class="subtitle">
+              Nuestra Trayectoria: Un Viaje hacia la Salud Dental y Sonrisas
+              Radiantes
+            </h2>
+            <p class="knowledge__paragraph">
+              Hace más de 10 años, Juane Dental abrió sus puertas con un simple
+              objetivo: cuidar sonrisas. Fundada por el Dr. Juan Hernandez,
+              nuestra clínica se ha convertido en un lugar donde la atención
+              dental excepcional y la compasión se encuentran. <br />
+              A lo largo de los años, hemos crecido y mejorado, incorporando
+              tecnología de vanguardia y un equipo apasionado. Hoy, Juane Dental
+              es una parte fundamental de la comunidad, dedicada a crear
+              sonrisas saludables y felices.
+              <br />
+              ¿Estás listo para ser parte de esta historia? Únete hoy y deja que
+              cuidemos de tu sonrisa como si fuera nuestra propia historia de
+              éxito.
+            </p>
+            <a href="#contact" class="cta trayectoria__btn">Únete hoy</a>
+          </div>
+
+          <figure class="knowledge__picture">
+            <img
+              src="./imagenes/historia.jpg"
+              alt="historia"
+              class="knowledge__img"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="container services hidden" id="services">
+        <h2 class="subtitle">Nuestros Servicios Dentales</h2>
+
+        <div class="services__main">
+          <div class="card">
+            <div class="card__seccion">
+              <img
+                src="/imagenes/ortodoncia.jpg"
+                alt="Ortodoncia"
+                class="card__img"
+              />
+              <span class="card__title">Ortodoncia</span>
+              <span class="price">7,500 DOP</span>
+            </div>
+            <ul class="lists">
+              <li class="list">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Mejora de la mandíbula</span>
+              </li>
+              <li class="list">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Mejora la estética dental</span>
+              </li>
+              <li class="list">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Corrección de problemas de habla y pronunciación</span>
+              </li>
+            </ul>
+            <a href="#contact" class="price__cta">Agendar cita</a>
+          </div>
+
+          <div class="card">
+            <div class="card__seccion">
+              <img
+                src="/imagenes/limpieza.jpg"
+                alt="Limpieza dental"
+                class="card__img"
+              />
+              <span class="card__title">Limpieza dental</span>
+              <span class="price">1,000 DOP</span>
+            </div>
+            <ul class="lists">
+              <li class="list">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Frescura y estética bucal</span>
+              </li>
+              <li class="list">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Eliminación de placa y sarro</span>
+              </li>
+              <li class="list">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Prevención de enfermedades de las encías</span>
+              </li>
+            </ul>
+            <a href="#contact" class="price__cta">Agendar cita</a>
+          </div>
+
+          <div class="card">
+            <div class="card__seccion">
+              <img
+                src="/imagenes/evaluacion.jpg"
+                alt="Evaluaciones"
+                class="card__img"
+              />
+              <span class="card__title">Evaluaciones</span>
+              <span class="price">1,500 DOP</span>
+            </div>
+            <ul class="lists">
+              <li class="list">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Prevención de problemas futuros</span>
+              </li>
+              <li class="list">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Monitoreo de afecciones crónicas</span>
+              </li>
+              <li class="list">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Detección temprana de problemas dentales</span>
+              </li>
+            </ul>
+            <a href="#contact" class="price__cta">Agendar cita</a>
+          </div>
+
+          <div class="card">
+            <div class="card__seccion">
+              <img
+                src="/imagenes/restauracion.jpg"
+                alt="Restauración"
+                class="card__img"
+              />
+              <span class="card__title">Restauración</span>
+              <span class="price">3,500 DOP</span>
+            </div>
+            <ul class="lists">
+              <li class="list">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Empastes dentales</span>
+              </li>
+              <li class="list">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Coronas dentales</span>
+              </li>
+              <li class="list">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span
+                  >Reconstrucción dental completa en casos de daño dental</span
+                >
+              </li>
+            </ul>
+            <a href="#contact" class="price__cta">Agendar cita</a>
+          </div>
+
+          <div class="card">
+            <div class="card__seccion">
+              <img
+                src="/imagenes/cirugia.jpg"
+                alt="Cirugía oral"
+                class="card__img"
+              />
+              <span class="card__title">Cirugía oral</span>
+              <span class="price">4,000 DOP</span>
+            </div>
+            <ul class="lists">
+              <li class="list">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Extracciones dentales</span>
+              </li>
+              <li class="list">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Cirugía de implantes dentales</span>
+              </li>
+              <li class="list">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Cirugía reconstructiva y de traumatismo facial</span>
+              </li>
+            </ul>
+            <a href="#contact" class="price__cta">Agendar cita</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="professionals hidden">
+        <div class="professionals__container container">
+          <img
+            src="/imagenes/left-arrow.svg"
+            alt="Izquierda"
+            class="professionals__arrow"
+            id="before"
+          />
+
+          <section
+            class="professionals__body professionals__body--show"
+            data-id="1"
+          >
+            <div class="professionals__texts">
+              <h2 class="subtitle">
+                María Ortiz -
+                <span class="professionals__course">Ortodoncista</span>
+              </h2>
+              <p class="professionals__review">
+                Se especializa en ortodoncia y ha transformado las vidas de
+                muchos pacientes en República Dominicana. Su pasión por
+                enderezar sonrisas y brindar confianza es innegable. Ha logrado
+                resultados sorprendentes con tratamientos personalizados que
+                devuelven sonrisas radiantes a personas de todas las edades.
+              </p>
+            </div>
+
+            <figure class="professionals__picture">
+              <img
+                src="/imagenes/doctora1.jpg"
+                alt="María Ortiz"
+                class="professionals__img"
+              />
+            </figure>
+          </section>
+
+          <section class="professionals__body" data-id="2">
+            <div class="professionals__texts">
+              <h2 class="subtitle">
+                Ana Fernández -
+                <span class="professionals__course">Higienista Dental</span>
+              </h2>
+              <p class="professionals__review">
+                Higienista dental dedicada. Su enfoque en la limpieza dental y
+                la prevención ha ayudado a mantener sonrisas saludables en su
+                comunidad. Ella educa a sus pacientes sobre la importancia de
+                una buena higiene oral y les brinda cuidado compasivo en cada
+                visita.
+              </p>
+            </div>
+
+            <figure class="professionals__picture">
+              <img
+                src="/imagenes/doctora2.jpg"
+                alt="María Ortiz"
+                class="professionals__img professionals__img--ajuste"
+              />
+            </figure>
+          </section>
+
+          <section class="professionals__body" data-id="3">
+            <div class="professionals__texts">
+              <h2 class="subtitle">
+                Laura Sánchez -
+                <span class="professionals__course"
+                  >Especialista en Evaluaciones</span
+                >
+              </h2>
+              <p class="professionals__review">
+                Experta en evaluaciones dentales. Su precisión y atención al
+                detalle en el diagnóstico son invaluables. Ha identificado
+                problemas dentales tempranos y ha salvado muchas sonrisas de
+                problemas mayores a lo largo de su carrera.
+              </p>
+            </div>
+
+            <figure class="professionals__picture">
+              <img
+                src="/imagenes/doctora3.jpg"
+                alt="María Ortiz"
+                class="professionals__img"
+              />
+            </figure>
+          </section>
+
+          <section class="professionals__body" data-id="4">
+            <div class="professionals__texts">
+              <h2 class="subtitle">
+                Carolina Rodríguez -
+                <span class="professionals__course">Restauradora Dental</span>
+              </h2>
+              <p class="professionals__review">
+                Apasionada restauradora dental. Su habilidad para devolver la
+                funcionalidad y la estética a los dientes dañados es
+                impresionante. Ha restaurado la confianza de sus pacientes al
+                reconstruir sonrisas con cuidado y destreza.
+              </p>
+            </div>
+
+            <figure class="professionals__picture">
+              <img
+                src="/imagenes/doctora4.jpg"
+                alt="María Ortiz"
+                class="professionals__img professionals__img--ajuste"
+              />
+            </figure>
+          </section>
+
+          <section class="professionals__body" data-id="5">
+            <div class="professionals__texts">
+              <h2 class="subtitle">
+                Isabel Martínez -
+                <span class="professionals__course"> Cirujana Oral</span>
+              </h2>
+              <p class="professionals__review">
+                Cirujana oral excepcional. Ha realizado procedimientos complejos
+                con éxito, devolviendo a sus pacientes la función oral y la
+                comodidad. Su dedicación y habilidades quirúrgicas han cambiado
+                vidas y aliviado el dolor oral en la República Dominicana.
+              </p>
+            </div>
+
+            <figure class="professionals__picture">
+              <img
+                src="/imagenes/dentista5.jpg"
+                alt="María Ortiz"
+                class="professionals__img"
+              />
+            </figure>
+          </section>
+
+          <img
+            src="/imagenes/right-arrow.svg"
+            alt="Derecha"
+            class="professionals__arrow"
+            id="next"
+          />
+        </div>
+
+        <section class="contactUs container hidden" id="contact">
+          <div class="contact__title">
+            <h2 class="subtitle">Contactanos</h2>
+          </div>
+          <div class="box">
+            <!-- form -->
+            <div class="contact form">
+              <h3>Envianos un mensaje</h3>
+              <form
+                action="https://formspree.io/f/xknlkedb"
+                method="POST"
+                id="form"
+              >
+                <div class="formbox">
+                  <div class="row50">
+                    <div class="inputBox">
+                      <span>Nombre</span>
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Juan"
+                        required
+                      />
+                    </div>
+
+                    <div class="inputBox">
+                      <span>Apellido</span>
+                      <input
+                        type="text"
+                        name="last name"
+                        placeholder="Hernández"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="row50">
+                    <div class="inputBox">
+                      <span>Email</span>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="juane@gmail.com"
+                        required
+                      />
+                    </div>
+
+                    <div class="inputBox">
+                      <span>Telefono</span>
+                      <input
+                        type="tel"
+                        name="tel"
+                        placeholder="+1 809-444-9999"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="row100">
+                    <div class="inputBox">
+                      <span>Mensaje</span>
+                      <textarea
+                        name="message"
+                        placeholder="Deja un mensaje..."
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="row100">
+                    <div class="inputBox">
+                      <input
+                        type="submit"
+                        value="Enviar"
+                        class="inputBox__button"
+                        target="_blank"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!-- info -->
+            <div class="contact info">
+              <h3>Información de contacto</h3>
+
+              <div class="infoBox">
+                <div>
+                  <span><ion-icon name="location"></ion-icon></span>
+                  <p>Pantoja, Los Alcarrizos <br />Santo Domingo</p>
+                </div>
+                <div>
+                  <span><ion-icon name="mail-unread"></ion-icon></span>
+                  <a href="mailto:juan.elias0626@gmail.com" target="_blank"
+                    >juan.elias0626@gmail.com</a
+                  >
+                </div>
+                <div>
+                  <span><ion-icon name="call"></ion-icon></span>
+                  <p>809-444-3333</p>
+                </div>
+                <ul class="sci">
+                  <li>
+                    <a
+                      href="https://chat.whatsapp.com/GTf9fqLoHvxEiWcNQaYWNX"
+                      target="_blank"
+                      ><ion-icon name="logo-whatsapp"></ion-icon
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/je26.2/" target="_blank"
+                      ><ion-icon name="logo-instagram"></ion-icon
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100010605072863"
+                      target="_blank"
+                      ><ion-icon name="logo-facebook"></ion-icon
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- map -->
+            <div class="contact map">
+              <iframe
+                title="Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.132601986093!2d-69.99977122784608!3d18.522908969108805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8ba948beb10f%3A0x444b09bb9fa174a1!2sPlaza%20Carmen%20Renata%20III!5e0!3m2!1ses-419!2sdo!4v1696990218402!5m2!1ses-419!2sdo"
+                style="border: 0"
+                allowfullscreen=""
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer hidden">
+      <section class="footer__container container">
+        <nav class="nav nav--footer">
+          <h2 class="footer__title">Juane Dental.</h2>
+
+          <ul class="nav__link nav__link--footer">
+            <li class="nav__items">
+              <a href="#hero" class="nav__links nav__items--footer">Inicio</a>
+            </li>
+            <li class="nav__items">
+              <a href="#about" class="nav__links nav__items--footer"
+                >Sobre nosotros</a
+              >
+            </li>
+            <li class="nav__items">
+              <a href="#services" class="nav__links nav__items--footer"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav__items">
+              <a href="#contact" class="nav__items--footer nav__links"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <form
+          action="https://formspree.io/f/xknlkedb"
+          method="POST"
+          class="footer__form"
+          id="formFooter"
+        >
+          <h2 class="footer__contact">¡Transforma tu sonrisa hoy!</h2>
+          <div class="footer__inputs">
+            <input
+              name="email"
+              type="email"
+              placeholder="Email:"
+              class="footer__input"
+            />
+            <input type="submit" value="Enviar" class="footer__submit" />
+          </div>
+        </form>
+      </section>
+
+      <section class="footer__copy container">
+        <div class="footer__social">
+          <a
+            href="https://www.linkedin.com/in/juan-elias-hj"
+            target="_blank"
+            class="footer__icon"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+          <a
+            href="https://github.com/JE2606"
+            target="_blank"
+            class="footer__icon"
+            ><ion-icon name="logo-github"></ion-icon
+          ></a>
+          <a
+            href="https://www.instagram.com/je26.2/"
+            target="_blank"
+            class="footer__icon"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+        </div>
+
+        <h3 class="footer__copyright">
+          Derechos reservados &copy; Juan Elias Hernández
+        </h3>
+      </section>
+    </footer>
+
+    <script src="/js/slider.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/js/responsiveMenu.js"></script>
+    <script src="/js/formMessage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
